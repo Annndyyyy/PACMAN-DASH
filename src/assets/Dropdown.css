@@ -1,0 +1,103 @@
+.main-box {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .input-box {
+    height: 2.375rem;
+    border: 1px solid #fff;
+    margin-top: 1.25rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    top: 50%;
+    left: 0.625rem;
+    transform: translateY(-50%);
+  }
+  
+  .input-box .icon svg {
+    font-size: 0.75rem;
+    top: 0.75rem;
+    left: 0.625rem;
+    fill: white;
+  }
+  
+  .input-box input {
+    width: 100%;
+    background: 0 0;
+    border: none;
+    height: 100%;
+    padding-left: 1.875rem;
+    outline: none;
+    color: white;
+    font-size: 0.73rem;
+  }
+  
+  .input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.319);
+    text-transform: uppercase;
+  }
+  
+  ul {
+    position: relative;
+    list-style: none;
+    height: 50%;
+  }
+  
+  .dropdown-list li .line {
+    position: absolute;
+    width: 0.125rem;
+    height: 100%;
+    top: 0.25rem;
+    top: 0.25rem;
+    bottom: 0;
+    background: #ed0295;
+    left: 0.25rem;
+  }
+  .box-dot{
+    width: 0.625rem;
+    height: 0.625rem;
+    display: inline-block;
+    
+    background-color: #fff
+  }
+  .box-dot svg{
+    fill: black;
+    font-size: .625rem;
+  }
+  .dropdown-item{
+    position: relative;
+    font-size: .9375rem;
+    align-items: center;
+    
+  }
+  .text{
+    cursor: pointer;
+    display: inline-block;
+    width: initial;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 100;
+    margin-left: 1.875rem!important;
+    color: rgb(240, 240, 240);
+  }
+  .text.active{
+    color: white;
+  }
+  .application{
+    font-size: .9375rem;
+    cursor: pointer;
+    display: inline-block;
+    width: initial;
+    margin-left: 0.625rem;
+    color: #fff;
+  }
+  .name-dot{
+    display:block;
+    margin-top: 0.235rem;
+
+  }

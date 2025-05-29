@@ -1,0 +1,114 @@
+.chart-container {
+  width: 95%;
+  height: 85%;
+  max-width: 50rem;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-graph {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 0.625rem;
+  margin-right:1.25rem;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  color: #777;
+}
+.title-graph-right {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 0.625rem;
+  margin-left: 1.25rem;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  color: #777;
+}
+.legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  margin-right: 0.938rem;
+}
+
+.legend-color {
+  width: 0.938rem;
+  height:0.938rem;
+  margin-right: 0.313rem;
+}
+
+.legend-label {
+  font-size: 0.875rem;
+}
+
+.legend-line {
+  display: inline-block;
+  width: 0.938rem;
+  height: 0.125rem;
+  border: 1px solid;
+  margin-right: 0.313rem;
+}
+
+.line-color {
+  width: 0.938rem;
+  height:0.125rem;
+  margin-right: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+.chart-wrapper {
+  flex: 1;
+}
+
+#chartjs-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  border-radius:0.188rem;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  transition: opacity 0.3s;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-line {
+  width: 0;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  margin-right: 0.625rem;
+}
+
+.tooltip-content {
+  flex: 1;
+}
+
+.arc text {
+  opacity: 1;
+  transform-origin: center bottom;
+  animation: openingAnimation 2s ease-in-out;
+}
+
+@keyframes openingAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sign-text-con-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}

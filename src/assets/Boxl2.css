@@ -1,0 +1,57 @@
+.main-content-2 {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-content-2 {
+  text-align: center;
+  padding-top: 1.875rem;
+  vertical-align: middle;
+  color: #777;
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.top-content-2 .icon {
+  display: flex;
+}
+
+.top-content-2 svg {
+  color: #777;
+}
+.bottom-content-2 {
+  display: flex;
+  margin-top: 1.625rem;
+  top: auto;
+}
+.bottom-content-2 .sign-text-con-2 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ed0295;
+  margin-top: 0.313rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 0.2rem;
+  font-weight: 400;
+}
+.bottom-content-2 span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ed0295;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.bottom-content-2 svg {
+  font-size: 2rem;
+  fill: #ed0295;
+  margin-top: 0.375rem;
+}
+.top-content-2 .title {
+  font-weight: 700;
+}

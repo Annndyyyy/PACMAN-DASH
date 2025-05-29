@@ -1,0 +1,161 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.688rem;
+  font-weight: 600;
+  width: 99.4%;
+  height: 2.83rem;
+  background-color: white;
+  margin-top: 1rem;
+  margin-left: 0.313rem;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.left-content span {
+  font-weight: 700;
+}
+
+.left-content svg {
+  margin-right: 0.5rem;
+  fill: #ed0295;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 63.125rem) {
+  .right-content div:not(.security) {
+    display: none;
+  }
+}
+
+.custom-line {
+  width: 0.063rem;
+  height: 1.25rem;
+  background-color: #525151;
+}
+.all-applications.selected {
+  color: #ed0295;
+}
+.arrow svg {
+  fill: black;
+  font-size: 0.875rem;
+  vertical-align: middle;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.select-name {
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+.right-content div {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.right-content div:last-child {
+  margin-right: 0;
+}
+
+.right-content .number {
+  margin-right: 0.5rem;
+  color: #ed0295;
+  font-weight: bold;
+}
+
+.right-content .top-name {
+  color: #777;
+  padding-left: 0.625rem;
+  padding-right: 0.063rem;
+}
+
+.right-content .intake {
+  color: #777;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.circle {
+  height: 0.75rem;
+  width: 0.75rem;
+  background: #95dd46;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.security {
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+}
+
+.security span {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.75rem;
+  margin-right: 0.375rem;
+  line-height: 1.2;
+}
+.dropdown {
+  background: #5f5f5f;
+  margin-top: 1.6rem;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  height: 27.5rem;
+  overflow: hidden;
+  animation: slideDown 0.8s ease-in-out;
+  width: 17.5rem;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 27.5rem;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.6);
+  z-index: 10;
+}
+.top-bar.overlay-active {
+  z-index: 20;
+  position: relative;
+  box-shadow: 0 0 10px 1px #777;
+}
+.top-bar.overlay-active .dropdown {
+  position: absolute;
+  z-index: 30;
+}
+@media screen and (max-width: 63.125rem) {
+  .top-bar {
+    width: 100%;
+  }
+  .all-applications {
+    display: none;
+  }
+
+  .select-name {
+    display: block;
+  }
+}
