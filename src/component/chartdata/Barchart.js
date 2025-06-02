@@ -28,7 +28,7 @@ const Barchart = () => {
   // State to track dynamic chart width based on window size
   const [chartWidth, setChartWidth] = useState(window.innerWidth * 0.95);
 
-  // Chart data (make sure all arrays have same length as labels)
+  // Chart data
   const data = {
     labels: ["JUN", "JULY", "AUG", "SEP", "OCT", "NOV"],
     datasets: [
@@ -49,9 +49,9 @@ const Barchart = () => {
         pointRadius: 0,
         pointHoverRadius: 0,
         borderCapStyle: "round",
-        tension: 0.3, // Smooth line
+        tension: 0.3, 
         borderWidth: 2,
-        type: "line", // Mixed chart type
+        type: "line", 
       },
     ],
   };
@@ -71,7 +71,7 @@ const Barchart = () => {
       x: {
         ticks: ticks,
         grid: {
-          display: false, // Hide vertical grid lines
+          display: false, 
         },
       },
       y: {
@@ -79,7 +79,7 @@ const Barchart = () => {
         position: "left",
         beginAtZero: true,
         grid: {
-          drawBorder: false, // Hide axis line
+          drawBorder: false, 
         },
         ticks: {
           ...ticks,
@@ -153,7 +153,7 @@ const Barchart = () => {
     barThickness: "flex",
     maxBarThickness: 25,
     minBarLength: 1,
-    // max: 1000000, // ❌ Should not be outside scales.y
+    
   };
 
   // Update chart width on window resize
@@ -176,7 +176,7 @@ const Barchart = () => {
         <Bar
           data={data}
           options={{ ...options, responsive: true, maintainAspectRatio: false }}
-          width={chartWidth} // Optional if responsive is true
+          width={chartWidth} 
           height={250}
         />
         <div className="title-graph-right">RUN RATE</div>
