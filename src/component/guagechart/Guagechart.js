@@ -8,7 +8,7 @@ function Guagechart({ filledPercentage }) {
   // Prepare data for the doughnut chart
   const data = {
     // Note: 'label' should be 'labels' (array of labels for the chart)
-    labels: ['Yes', 'No'], 
+    // labels: ['Yes', 'No'], 
     datasets: [
       {
         label: 'POLL',
@@ -22,23 +22,23 @@ function Guagechart({ filledPercentage }) {
   };
 
   // Options to customize the chart appearance and behavior
-  const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        display: false, // hide legend
-      },
-      tooltip: {
-        enabled: false, // disable tooltips
-      },
-    },
+  const option = {
+    // responsive: true,
+    // maintainAspectRatio: false,
+    // plugins: {
+    //   legend: {
+    //     display: false, // hide legend
+    //   },
+    //   tooltip: {
+    //     enabled: false, // disable tooltips
+    //   },
+    // },
   };
 
   return (
-    <div style={{ width: "150px", height: "100px" }}>
+    <div style={{ width: "50px" }}>
       {/* Render Doughnut chart */}
-      <Doughnut data={data} options={options} />
+      <Doughnut data={data} options={option} />
     </div>
   );
 }
