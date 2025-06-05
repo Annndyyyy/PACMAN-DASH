@@ -8,7 +8,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { complianceTableData } from "../Tables/Table";
+import { complianceTableData } from "../../MockData/util";
 import "../../assets/Barchart.css";
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);

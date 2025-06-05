@@ -4,7 +4,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 import ShareIcon from '@mui/icons-material/Share';
 import CloseIcon from '@mui/icons-material/Close';
 // import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Table, { tableData } from "./Tables/Table";
+import Table from "./Tables/Table";
+import { tableData } from "../MockData/util";
 
 const FullCostDetails = ({ onClose }) => {
   return (

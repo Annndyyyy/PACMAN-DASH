@@ -3,7 +3,8 @@ import Linechart from "../component/chartdata/Linechart";
 import DownloadIcon from '@mui/icons-material/Download';
 import ShareIcon from '@mui/icons-material/Share';
 import CloseIcon from '@mui/icons-material/Close';
-import Table, { tableData } from "./Tables/Table";
+import Table from "./Tables/Table";
+import { tableData } from "../MockData/util";
 
 const FullInventoryDetails = ({ onClose }) => {
   return (

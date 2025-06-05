@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import "../assets/Dropdown.css";
+import "../../assets/Dropdown.css";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 const Dropdown = ({handleSelectItem,selectedItems}) => {
