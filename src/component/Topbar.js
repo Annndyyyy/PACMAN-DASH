@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import "../assets/Topbar.css";
-import Dropdown from "./Dropdown";
+import Dropdown from "./../component/Dropdown/index";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Topbar = () => {

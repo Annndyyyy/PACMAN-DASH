@@ -1,30 +1,6 @@
 import React, {useState} from 'react'
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
-export const tableData = [
-  { label1: 'Data R1C1', number: 1, date: '01/08/16', label4: 'Data R1C4', label5: 'Data R1C5', label6: 'Data R1C6', label7: 'Data R1C7' },
-  { label1: 'Data R2C1', number: 2, date: '02/08/16', label4: 'Data R2C4', label5: 'Data R2C5', label6: 'Data R2C6', label7: 'Data R2C7' },
-  { label1: 'Data R3C1', number: 3, date: '03/08/16', label4: 'Data R3C4', label5: 'Data R3C5', label6: 'Data R3C6', label7: 'Data R3C7' },
-  { label1: 'Data R4C1', number: 4, date: '04/08/16', label4: 'Data R4C4', label5: 'Data R4C5', label6: 'Data R4C6', label7: 'Data R4C7' },
-  { label1: 'Data R5C1', number: 5, date: '05/08/16', label4: 'Data R5C4', label5: 'Data R5C5', label6: 'Data R5C6', label7: 'Data R5C7' },
-  { label1: 'Data R6C1', number: 6, date: '06/08/16', label4: 'Data R6C4', label5: 'Data R6C5', label6: 'Data R6C6', label7: 'Data R6C7' },
-  { label1: 'Data R7C1', number: 7, date: '07/08/16', label4: 'Data R7C4', label5: 'Data R7C5', label6: 'Data R7C6', label7: 'Data R7C7' },
-  { label1: 'Data R8C1', number: 8, date: '08/08/16', label4: 'Data R8C4', label5: 'Data R8C5', label6: 'Data R8C6', label7: 'Data R8C7' },
-  { label1: 'Data R9C1', number: 9, date: '09/08/16', label4: 'Data R9C4', label5: 'Data R9C5', label6: 'Data R9C6', label7: 'Data R9C7' },
-  { label1: 'Data R10C1', number: 10, date: '10/08/16', label4: 'Data R10C4', label5: 'Data R10C5', label6: 'Data R10C6', label7: 'Data R10C7' },
-  { label1: 'Data R11C1', number: 11, date: '11/08/16', label4: 'Data R11C4', label5: 'Data R11C5', label6: 'Data R11C6', label7: 'Data R11C7' },
-  { label1: 'Data R12C1', number: 12, date: '12/08/16', label4: 'Data R12C4', label5: 'Data R12C5', label6: 'Data R12C6', label7: 'Data R12C7' },
-];
-
-export const complianceTableData = [
-  { category: 'SECURITY', compliance: 28 },
-  { category: 'TAGGING', compliance: 50 },
-  { category: 'CERTIFICATES', compliance: 65 },
-  { category: 'PATCHING', compliance: 75 },
-  { category: 'SOX', compliance: 60 },
-  { category: 'CLOUD OP', compliance: 25 },
-];
-
 const Table = ({name, tableData}) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortColumn, setSortColumn] = useState(null); // 'number' or 'date'
