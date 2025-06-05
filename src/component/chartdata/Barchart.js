@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../assets/Barchart.css";
 import {
   Chart as ChartJS,
@@ -25,9 +25,6 @@ ChartJS.register(
 );
 
 const Barchart = () => {
-  // State to track dynamic chart width based on window size
-  const [chartWidth, setChartWidth] = useState(window.innerWidth * 0.95);
-
   // Chart data
   const data = {
     labels: ["JUN", "JULY", "AUG", "SEP", "OCT", "NOV"],
@@ -153,21 +150,7 @@ const Barchart = () => {
     barThickness: "flex",
     maxBarThickness: 25,
     minBarLength: 1,
-    
   };
-
-  // Update chart width on window resize
-  useEffect(() => {
-    const handleResize = () => {
-      setChartWidth(window.innerWidth * 0.95);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -176,7 +159,6 @@ const Barchart = () => {
         <Bar
           data={data}
           options={{ ...options, responsive: true, maintainAspectRatio: false }}
-          width={chartWidth} 
           height={250}
         />
         <div className="title-graph-right">RUN RATE</div>

@@ -20,8 +20,10 @@ import Storagechart from "../chartdata/Storagechart";
 // Importing static image for STORAGE section
 import img from '../../assets/server-storage.png';
 
+import React from "react";
+
 // Box1 component takes `expand` prop to control which box data to show
-const Box1 = ({ expand }) => {
+const Box1 = ({ expand, onCostOverlayChange, onShowFullMonitoringDetails, onShowFullCostDetails, onShowFullInventoryDetails, onShowFullStorageDetails, onShowFullUtilizationDetails, onShowFullComplianceDetails }) => {
   // Array containing the data for all six boxes
   const data = [
     {
@@ -86,7 +88,34 @@ const Box1 = ({ expand }) => {
 
   return (
     // Main container with conditional class based on `expand`
-    <div className={`main-content${expand ? " expanded" : ""}`}>
+    <div
+      className={`main-content${expand ? " expanded" : ""}`}
+      onClick={
+        selectedData.title === "COST" && expand && onShowFullCostDetails
+          ? onShowFullCostDetails
+          : selectedData.title === "MONITORING" && expand && onShowFullMonitoringDetails
+          ? onShowFullMonitoringDetails
+          : selectedData.title === "INVENTORY" && expand && onShowFullInventoryDetails
+          ? onShowFullInventoryDetails
+          : selectedData.title === "STORAGE" && expand && onShowFullStorageDetails
+          ? onShowFullStorageDetails
+          : selectedData.title === "UTILIZATION" && expand && onShowFullUtilizationDetails
+          ? onShowFullUtilizationDetails
+          : selectedData.title === "COMPLIANCE" && expand && onShowFullComplianceDetails
+          ? onShowFullComplianceDetails
+          : undefined
+      }
+      style={
+        (selectedData.title === "COST" && expand && onShowFullCostDetails) ||
+        (selectedData.title === "MONITORING" && expand && onShowFullMonitoringDetails) ||
+        (selectedData.title === "INVENTORY" && expand && onShowFullInventoryDetails) ||
+        (selectedData.title === "STORAGE" && expand && onShowFullStorageDetails) ||
+        (selectedData.title === "UTILIZATION" && expand && onShowFullUtilizationDetails) ||
+        (selectedData.title === "COMPLIANCE" && expand && onShowFullComplianceDetails)
+          ? { cursor: "pointer" }
+          : { cursor: "default" }
+      }
+    >
       <div className="box-container">
         {/* Top section with icon and title */}
         <div className="top-content">

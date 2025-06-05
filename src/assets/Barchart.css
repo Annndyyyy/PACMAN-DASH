@@ -1,18 +1,15 @@
 .chart-container {
-  width: 95%;
-  height: 85%;
-  max-width: 50rem;
   margin: 5% auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 70rem;
 }
 
 .title-graph {
   text-align: center;
   font-size: 0.75rem;
   margin-top: 0.625rem;
-  margin-right:1.25rem;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   color: #777;
@@ -21,7 +18,6 @@
   text-align: center;
   font-size: 0.75rem;
   margin-top: 0.625rem;
-  margin-left: 1.25rem;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   color: #777;
